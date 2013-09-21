@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://Hiufan.github.io/sitemap.xml 
+Sitemap: http://Hiufan.github.com/sitemap.xml 

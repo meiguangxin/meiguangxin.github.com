@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://Hiufan.github.io/atom.xml" rel="self"/>
-  <link href="http://Hiufan.github.io/"/>
-  <updated>2013-09-21T16:47:44+08:00</updated>
-  <id>http://Hiufan.github.io/</id>
+  <title><![CDATA[Hiufan互联网笔记]]></title>
+  <link href="http://Hiufan.github.com/atom.xml" rel="self"/>
+  <link href="http://Hiufan.github.com/"/>
+  <updated>2013-09-21T17:34:59+08:00</updated>
+  <id>http://Hiufan.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Hiufan]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My first octopress blog]]></title>
-    <link href="http://Hiufan.github.io/blog/2013/09/21/my-first-octopress-blog/"/>
+    <link href="http://Hiufan.github.com/blog/2013/09/21/my-first-octopress-blog/"/>
     <updated>2013-09-21T14:50:00+08:00</updated>
-    <id>http://Hiufan.github.io/blog/2013/09/21/my-first-octopress-blog</id>
+    <id>http://Hiufan.github.com/blog/2013/09/21/my-first-octopress-blog</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
