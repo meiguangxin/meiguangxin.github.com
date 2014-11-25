@@ -18,7 +18,7 @@ var pending;
 var commentscount = new Array();
 var isroot=((repos.indexOf('github.com')==-1 && repos.indexOf('github.io')==-1)?false:true);
 
-main();
+// main();
 
 function main(){
 	var disqusCounts = document.getElementsByName('commentscount');
