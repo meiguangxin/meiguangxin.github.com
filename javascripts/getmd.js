@@ -18,44 +18,44 @@ var pending;
 var commentscount = new Array();
 var isroot=((repos.indexOf('github.com')==-1 && repos.indexOf('github.io')==-1)?false:true);
 
-// main();
+main();
 
-// function main(){
-// 	var disqusCounts = document.getElementsByName('commentscount');
-// 	for(var i=0; i<disqusCounts.length; i++){
-// 		commentscount[Number(disqusCounts[i].id.substr(5))] = disqusCounts[i].innerText;
-// 	}
-// 	content.innerHTML = '';
-// 	loading.style.display = 'block';
-// 	if(path.split('/')[1] == 'search'){
-// 		search(path.split('/')[2]);
-// 	}
-// 	else if(path && path.split('/')[1] != 'page'){
-// 		disqus_url = hostbase + lowerCase(path);
-// 		//disqus_url = disqus_url.toLowerCase();
-// 		showpost(path);
-// 		(function() {
-//             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-//             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-//             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-//         })();
-// 	}
-// 	else{
-// 		//backhome.style.display = 'none';
-// 		document.title = sitetitle;
-// 		if(postList){
-// 			showlist(postList);
-// 		}
-// 		else{
-// 			pending = true;
-// 			document.getElementById('takinglonger').style.display = 'none';
-// 			chktakinglonger();
-// 			var el = document.createElement('script');
-// 			el.src = 'https://api.github.com/repos/' + githubname + '/' + repos + '/contents/md?callback=showlist'+(branch?('&ref='+branch):'');
-// 			document.getElementsByTagName('head')[0].appendChild(el);
-// 		}
-// 	}
-// }
+function main(){
+	var disqusCounts = document.getElementsByName('commentscount');
+	for(var i=0; i<disqusCounts.length; i++){
+		commentscount[Number(disqusCounts[i].id.substr(5))] = disqusCounts[i].innerText;
+	}
+	content.innerHTML = '';
+	loading.style.display = 'block';
+	if(path.split('/')[1] == 'search'){
+		search(path.split('/')[2]);
+	}
+	else if(path && path.split('/')[1] != 'page'){
+		disqus_url = hostbase + lowerCase(path);
+		//disqus_url = disqus_url.toLowerCase();
+		showpost(path);
+		(function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+	}
+	else{
+		//backhome.style.display = 'none';
+		document.title = sitetitle;
+		if(postList){
+			showlist(postList);
+		}
+		else{
+			pending = true;
+			document.getElementById('takinglonger').style.display = 'none';
+			chktakinglonger();
+			var el = document.createElement('script');
+			el.src = 'https://api.github.com/repos/' + githubname + '/' + repos + '/contents/md?callback=showlist'+(branch?('&ref='+branch):'');
+			document.getElementsByTagName('head')[0].appendChild(el);
+		}
+	}
+}
 
 function home(){
 	path = '';
