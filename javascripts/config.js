@@ -1,5 +1,5 @@
 var disqus_shortname = '';			//Short Name of disqus, this parameter is for disqus comment box.
-var hostbase = 'http://hiufan.github.com';		//The absolute root address of your blog without '/' in the end.
+var hostbase = 'http://hiufan.github.io';		//The absolute root address of your blog without '/' in the end.
 var githubname = 'Hiufan';						//Your username of GitHub.
 var repos = 'hiufan.github.com';					//Name of repository that contains your blog.
 var sitetitle = "Hiufan's blog";						//Name of your blog.
