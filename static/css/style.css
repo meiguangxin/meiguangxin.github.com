@@ -48,7 +48,7 @@ a,a:hover{color:#333;}
 #logo img {width: 70px;border-radius: 50%;border: 3px solid white;}
 
 
-.content{width:100%;padding: 0 10px;margin-top: 65px;}
+.content{width:100%;margin-top: 65px;}
 .post-list {width: 300px;margin: 0 auto;}
 .post {margin: 10px 0 30px 0;padding:10px 10px 30px 10px;background-color: #fff;
 	border: 1px solid #ddd;border-radius: 4px;-webkit-transition: border .2s ease-in-out;
